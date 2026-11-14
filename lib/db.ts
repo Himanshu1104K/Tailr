@@ -83,11 +83,11 @@ let ready: Promise<void> | undefined;
 /** Lazily connects and creates tables once per process. */
 export async function getDb(): Promise<Client> {
   if (!client) {
-    const url = process.env.DATABASE_URL || "file:jobs.db";
+    const url = process.env.TURSO_DATABASE_URL || "file:jobs.db";
     if (onVercel && url.startsWith("file:")) {
-      throw new Error("On Vercel, DATABASE_URL must be a Turso libsql:// URL (no local disk).");
+      throw new Error("On Vercel, TURSO_DATABASE_URL must be a Turso libsql:// URL (no local disk).");
     }
-    client = createClient({ url, authToken: process.env.DATABASE_AUTH_TOKEN || undefined });
+    client = createClient({ url, authToken: process.env.TURSO_AUTH_TOKEN || undefined });
     ready = client.executeMultiple(SCHEMA);
   }
   await ready;

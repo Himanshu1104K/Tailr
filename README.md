@@ -137,7 +137,7 @@ AI is used only to parse the resume (once per new PDF) and for each job you tap 
 
 ### Deploying to Vercel (`vercel` / `hybrid`)
 
-1. Create a Turso database and set `DATABASE_URL` and `DATABASE_AUTH_TOKEN`.
+1. Create a Turso database and set `TURSO_DATABASE_URL` and `TURSO_AUTH_TOKEN`.
 2. Set `TELEGRAM_BOT_TOKEN`, `TELEGRAM_ALLOWED_CHAT_ID`, `JSEARCH_API_KEY`, `TELEGRAM_WEBHOOK_SECRET`, `CRON_SECRET` and `XAI_API_KEY` in Vercel.
 3. Set `mode` in `config/config.json`. `llm.grokModel` defaults to `grok-4.7`.
 4. Deploy, then register the webhook:
