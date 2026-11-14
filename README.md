@@ -150,6 +150,13 @@ AI is used only to parse the resume (once per new PDF) and for each job you tap 
 
 ---
 
+## Dashboard
+
+The web app at `/` is a live stats dashboard: applied today, application streak, the pipeline from matched to applied, 30-day daily activity, fit-score distribution, JSearch quota, and breakdowns by role, work mode, source, company and apply channel.
+
+- It is password-protected with Basic auth. Set `DASHBOARD_PASSWORD` locally in `.env` and in your Vercel project. Any username works.
+- Locally: `npm run build && npm start`, then open http://localhost:3000.
+
 ## Telegram
 
 | Command | Does |
