@@ -1,0 +1,53 @@
+{
+  "mode": "local",
+  "roles": [
+    "Backend Developer",
+    "Software Engineer"
+  ],
+  "search": {
+    "searchIn": [],
+    "locations": [],
+    "monthlyRequestLimit": 200,
+    "hourlyRequestLimit": 1000,
+    "requestsPerDay": 1,
+    "country": "in",
+    "experienceYears": 1.5,
+    "includeRemote": true,
+    "remoteMinScore": 50,
+    "dailyCap": 10,
+    "datePosted": "3days"
+  },
+  "schedule": {
+    "time": "18:00",
+    "timezone": "Asia/Kolkata"
+  },
+  "resume": {
+    "path": "data/resume.pdf"
+  },
+  "llm": {
+    "backend": "auto",
+    "codexModel": "",
+    "grokModel": "grok-4.7"
+  },
+  "profile": {
+    "fullName": "Himanshu Kumar",
+    "email": "kumarHimanshu1104k@gmail.com",
+    "phone": "+91 7248158511",
+    "currentCity": "Meerut",
+    "linkedin": "https://www.linkedin.com/in/himanshukumard/",
+    "github": "https://github.com/Himanshu1104K",
+    "portfolio": "https://iamhimanshuk.vercel.app/",
+    "currentTitle": "Backend Developer",
+    "currentCompany": "Persist Ventures",
+    "totalExperience": "1.5 years",
+    "highestEducation": "B.Tech in CSE (AI & ML), Meerut Institute of Engineering & Technology (2022–2026), CGPA 7.67",
+    "workAuthorization": "Indian citizen",
+    "needsSponsorship": false,
+    "willingToRelocate": true,
+    "preferredLocations": "Remote only",
+    "noticePeriod": "60 days",
+    "currentCtc": "8 LPA",
+    "expectedCtc": "15 LPA (minimum)",
+    "earliestStartDate": "30 days from offer"
+  }
+}
