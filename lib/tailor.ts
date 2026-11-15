@@ -23,10 +23,10 @@ STRICT RULES — breaking any of these makes the output unusable:
 
 WHAT TO DO:
 - Rewrite "headline" and "summary" (2–3 sentences) for this role.
-- Reorder and reword bullets so work relevant to the job comes first and uses the job's vocabulary where it is truthful. Max 5 bullets per role, each under 30 words. Keep at least 2 per role.
+- Reorder and reword bullets so work relevant to the job comes first and uses the job's vocabulary where it is truthful. Max 4 bullets per role, each under 25 words. Keep at least 2 per role.
 - Order skills so the job's required skills that the candidate has come first.
-- Keep only projects relevant to the job (or all, if few).
-- Fit everything on one page.
+- Keep at most 2 projects, the most relevant to the job, with at most 2 bullets each.
+- The resume MUST fit on one A4 page: summary under 50 words, no filler. Shorter is better than overflowing.
 - "coverLetter": 150–220 words of plain text to the hiring team at ${job.company}. Specific to this job, no placeholders, no invented facts, signed with the candidate's name.
 - "answers": answer each of these in under 80 words, using only BASE_RESUME and PROFILE (say "Open to discussion" if the profile has no value): ${JSON.stringify(QUESTIONS)}
 ${previousErrors.length ? `\nYOUR PREVIOUS ATTEMPT WAS REJECTED FOR:\n- ${previousErrors.join("\n- ")}\nFix every one of these.\n` : ""}

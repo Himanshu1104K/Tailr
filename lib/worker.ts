@@ -21,7 +21,8 @@ export async function processJob(id: number) {
   try {
     const base = await getBaseResume();
     const t = await tailor(base, job);
-    const pdf = await renderResumePdf(t.resume);
+    const { pdf, resume } = await renderResumePdf(t.resume); // always one page
+    t.resume = resume;
     await run(
       `INSERT INTO applications (job_id, resume_json, cover_letter, answers_json, method) VALUES (?, ?, ?, ?, 'assisted')
        ON CONFLICT(job_id) DO UPDATE SET resume_json = excluded.resume_json, cover_letter = excluded.cover_letter,
